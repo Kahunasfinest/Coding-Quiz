@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p id="timer" class="">time:</p>
+    </header>
+    <main>
+        <!-- create 3 sections to represent our screens -->
+        <section id="start-screen" class="">
+            <p>Here you will take a short quiz on the fundamentals of JavaScript!</p>
+            <button id="Start-btn">Start Quiz</button>
+    
+        </section>
+
+        <section id="quiz-screen-1" class="hidden question">
+            <h2>What is JavaScript?</h2>
+            <ul>
+                <li><button id='incorrect-1' class="answer-choice"> JavaScript is a web based version of Java</button>
+                </li>
+                <li><button id='incorrect-2' class="answer-choice">A newsletter bought at a store</button></li>
+                <li><button id='incorrect-3' class="answer-choice">An AI like Chatgpt</button></li>
+                <li><button id='correct' class="answer-choice">A programming language optimzed for the web</button></li>
+            </ul>
+        </section>
+        <section id="quiz-screen-2" class="hidden question">
+            <h2>which of the following is not a JavaScript data type?</h2>
+            <ul>
+                <li><button id='incorrect-1' class="answer-choice">String</button></li>
+                <li><button id='incorrect-2' class="answer-choice">Number</button></li>
+                <li><button id='correct' class="answer-choice">Striker</button></li>
+                <li><button id='incorrect-3' class="answer-choice">Undefined</button></li>
+            </ul>
+        </section>
+        <section id="quiz-screen-3" class="hidden question">
+            <h2>Which of the following is not used to create a string?</h2>
+            <ul>
+                <li><button id='correct' class="answer-choice">#</button></li>
+                <li><button id='incorrect-1' class="answer-choice">""</button></li>
+                <li><button id='incorrect-2' class="answer-choice">''</button></li>
+                <li><button id='incorrect-3' class="answer-choice">``</button></li>
+            </ul>
+        </section>
+        <section id="quiz-screen-4" class="hidden question">
+            <h2>what is a callback function?</h2>
+            <ul>
+                <li><button id='correct' class="answer-choice">A function that is executed after another function has
+                        finished its
+                        execution</button></li>
+                <li><button id='incorrect-1' class="answer-choice">A function that makes a network call</button></li>
+                <li><button id='incorrect-2' class="answer-choice">A function to order food</button></li>
+                <li><button id='incorrect-3' class="answer-choice">A function that will call your cellphone when another
+                        function is
+                        ran</button></li>
+            </ul>
+        </section>
+        <section id="quiz-screen-5" class="hidden question">
+            <h2>Which of the following is not a method of the math library?</h2>
+            <ul>
+                <li><button id='incorrect-1' class="answer-choice">Math.ceil</button></li>
+                <li><button id='incorrect-2' class="answer-choice">Math.floor</button></li>
+                <li><button id='incorrect-3' class="answer-choice">Math.abs</button></li>
+                <li><button id='correct' class="answer-choice">Math.average</button></li>
+            </ul>
+        </section>
+        <p id='correct' class='hidden'>Correct</p>
+        <p id='wrong' class='hidden'>Wrong</p>
+        <section id="highscores-screen" class="hidden">
+            <!-- need an input box and submit button shown at first-->
+            <!-- a table with all of the previous hisghscores which needs to be hidden until submit button is clicked-->
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
